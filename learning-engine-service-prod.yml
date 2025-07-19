@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: learning-engine-service
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka
+
+  instance:
+    prefer-ip-address: true
+
+  data:
+    mongodb:
+      uri: mongodb://prod-mongo-host:27017/ailearn
